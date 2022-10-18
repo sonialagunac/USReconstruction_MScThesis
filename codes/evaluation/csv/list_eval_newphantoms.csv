@@ -1,0 +1,6 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+phantom_mert/newMSphantom_04_1907.mat,1,0.0,0.0,test,syn,test
+phantom_mert/newMSphantom_05_1907.mat,1,0.0,0.0,test,syn,test
+phantom_mert/newMSphantom_03_1907.mat,1,0.0,0.0,test,syn,test
+phantom_mert/newMSphantom_02_1907.mat,1,0.0,0.0,test,syn,test
+phantom_mert/newMSphantom_01_1907.mat,1,0.0,0.0,test,syn,test

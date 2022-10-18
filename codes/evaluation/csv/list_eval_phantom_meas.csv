@@ -1,0 +1,4 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+phantom/fukuda_1_imgs_1907mask.mat,1,0.0,0.0,test,syn,test
+phantom/phantom_trial1_14_imgs_1907.mat,14,0.0,0.0,test,syn,test
+

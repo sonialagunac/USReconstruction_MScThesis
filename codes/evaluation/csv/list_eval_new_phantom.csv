@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+phantom_mert/05_data_stack_bfim.mat,5,0.0,0.0,test,syn,test

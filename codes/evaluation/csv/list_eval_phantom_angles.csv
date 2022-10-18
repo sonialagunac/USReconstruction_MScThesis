@@ -1,0 +1,13 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+angles/mat/mpBUS004_L1.mat,3,0.0,0.0,test,syn,test
+angles/mat/mpBUS005_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS008_L1.mat,5,0.0,0.0,test,syn,test
+angles/mat/mpBUS011_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS014_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS014_L2.mat,5,0.0,0.0,test,syn,test
+angles/mat/mpBUS017_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS019_L1.mat,2,0.0,0.0,test,syn,test
+angles/mat/mpBUS021_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS042_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS045_L1.mat,4,0.0,0.0,test,syn,test
+angles/mat/mpBUS004_L2.mat,5,0.0,0.0,test,syn,test

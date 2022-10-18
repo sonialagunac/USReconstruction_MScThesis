@@ -1,0 +1,6 @@
+.DS_Store
+/runs/
+*.pyc
+*.m~
+/data/
+/reports/plots_generated_data

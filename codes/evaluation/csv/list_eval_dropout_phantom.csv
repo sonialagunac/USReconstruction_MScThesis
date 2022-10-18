@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+phantom/phantom_trial1_14_imgs.mat, 14,0.0,0.0,test,syn,test

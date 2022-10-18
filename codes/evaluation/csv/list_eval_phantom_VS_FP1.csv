@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+VS/train_VS_15comb_fullpipeline_2.mat,2,0.0,0.0,test,syn,val

@@ -1,0 +1,3 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+validation/val_MS_6comb.mat,200,0.9,0.0,patchy,syn,val
+

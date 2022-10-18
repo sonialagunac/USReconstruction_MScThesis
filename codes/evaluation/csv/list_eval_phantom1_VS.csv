@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+trying/mpBUS022_L1_1.mat,1,0.0,0.0,test,syn,test

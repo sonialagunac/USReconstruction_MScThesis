@@ -1,0 +1,4 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+test/testset_ideal_MS_32_imgs.mat,32,0.1,0.0,patchy,syn,val
+test/testset_ideal_MS_32_imgs.mat,32,0.5,0.0,patchy,syn,val
+test/testset_ideal_MS_32_imgs.mat,32,0.9,0.0,patchy,syn,val

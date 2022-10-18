@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+new_inverse/new_test_syn.mat,40,0.,0.0,patchy,syn,val

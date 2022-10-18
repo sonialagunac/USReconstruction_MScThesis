@@ -1,0 +1,74 @@
+# Configuration for experiments on Virtual Source data
+---
+data_type: 'syn'
+momentum: 0.9
+init_type: 'Lt'
+
+# Exp params
+exp_name: 'VS_32_20_e6_L1_ens' # Name of experiment
+n_interp_knots_data: 35 # Number of knots to use for interpolation
+n_interp_knots_reg: 35 # Number of knots to use for interpolation
+minx_data: -1 # minx for interpolation knot
+maxx_data: 1 # maxx for interpolation knots
+minx_reg: -1 # minx for interpolation knots
+maxx_reg: 1 # maxx for interpolation knots
+D_standardize: False # Whether to learn the mean or not
+weight_us: True # Use undersampling rate dependent weighting of data term
+readjust_rng: True # Use adaptive interpolator
+use_temperature: False
+decrease_lr: False
+n_iter: 120000 # Number of training steps #orig is 120000
+n_filters_vn: 32 #Number of filters to use in the VN, orig 32
+filter_sz_vn: 8 # Filter size in VN, has to be 8
+n_layers: 20 # Number of unrolled iteration, orig 20
+use_spatial_filter_weighting: True # Whether to use spatial filtering
+use_reg_activation_reg: True
+use_reg_activation_data: False
+lambda_reg: 1e6
+
+#Uncertainty params
+csv: 'list_eval_phantom_VS_SOS_1.csv' #File for inference
+KL: False #To activate Bayesian Variational Inference
+alpha_KL: 1 #Parameter alpha from Bayesian Variational Inference
+beta_KL: 1e-1 #Parameter beta from Bayesian Variational Inference
+aleat: False #Activate implemented aleatoric uncertainty
+drop: False #To activate MC Dropout
+rate: 0.5 #MC Dropout rate for K filters
+n_samp: 1 #Number of samples at inference, 1 if plain VN and 100 or design choice for dropout and bayesian inference
+
+# Logging parameters
+restore: False
+cpkt: 120000
+filename: 'VS/train_VS_15comb_smooth_10k_syn_smallvar.mat' # Big data set, has measmnts
+filename_val_fullpipeline: 'VS/eval_VS_15comb_64.mat'
+
+# Training parameters
+lr_init: 1e-3 # Initial learning rate
+val_interv: 1000 # validate step freq
+print_interv: 500 # print summary statistics freq
+save_matrices: True # Whether to save training matrices for debugging
+save_matrices_val: False
+save_model_interv: 5000 # save model freq , orig was 5000
+save_matrices_interv: 10000 # save model  freq
+n_val: 256 # Number of validation points
+mix: True
+mix_triple: False
+filename_mix: 'VS/train_VS_15comb_fullpipeline_840.mat' #Has measmnts
+mix_type: 'syn'
+filename_mix_triple: 'train/ideal_time_train_630.mat' #Has timedelays, not using it now
+mix_type_triple: 'ideal_time'
+p_mix: 4 #Mixing ratio at training time
+
+# Data specific parameters
+msz_x: 64 # x Size of measurement
+msz_y: 84 # y Size of measurement
+NA: 15 # Number of angle pairs, VS has 15
+
+# Network parameters 
+n_batch: 16 # Batch size, original 16
+cost_type: 'recon_iter' # type of training cost function
+
+# Parameters for noise experiment
+noise_rate: 0.1 # Noise rate
+usm_rate: 0.9 # Undersampling rate, orig was 0.9
+random_mask_type: 'patchy' # Type of undersampling mask

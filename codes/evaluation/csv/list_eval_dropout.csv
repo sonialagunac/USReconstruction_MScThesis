@@ -1,0 +1,2 @@
+filename,n_test,usr_rate,noise_rate,type_mask,data_type,eval_type
+test/fullpipeline_testset_6comb_32_imgs.mat,32,0.0,0.0,test,syn,val
